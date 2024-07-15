@@ -1,0 +1,23 @@
+<ion-content>
+
+  <div class="map-container">
+    <img src="assets/map-placeholder.png" alt="Map" class="map-image">
+
+    <div class="locator ion-activatable ripple-parent circle" ion-activatable>
+      <ion-icon name="locate"></ion-icon>
+      <ion-ripple-effect type="unbounded"></ion-ripple-effect>
+    </div>
+    <div class='search'>
+      <ion-searchbar placeholder="Where would you go?" class="search-bar"></ion-searchbar>
+      <ion-segment value="transport" color="primary" style="color: antiquewhite;">
+        <ion-segment-button value="transport">
+          Transport
+        </ion-segment-button>
+        <ion-segment-button value="delivery">
+          Delivery
+        </ion-segment-button>
+      </ion-segment>
+    </div>
+
+  </div>
+</ion-content>

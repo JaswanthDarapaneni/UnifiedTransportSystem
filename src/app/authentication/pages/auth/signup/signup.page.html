@@ -1,0 +1,55 @@
+<ion-buttons slot="start">
+  <ion-back-button color="dark" defaultHref="/"></ion-back-button>
+</ion-buttons>
+
+<ion-content [fullscreen]="true">
+  <div class="or-divider">Sign up</div>
+  <div class="container">
+    <div class="or-divider_inner">Sign up </div>
+    <div>
+    <form [formGroup]="signupForm" (ngSubmit)="onSubmit()">
+      <ion-item>
+        <ion-input color="primary" formControlName="name" label="Name" type="text" labelPlacement="floating"
+          placeholder="Enter Name"></ion-input>
+        <div *ngIf="signupForm.get('name')?.invalid && signupForm.get('name')?.touched" class="error-text">required
+        </div>
+      </ion-item>
+
+      <ion-item>
+        <ion-input color="primary" formControlName="email" label="Email" type="email" labelPlacement="floating"
+          placeholder="Enter Email"></ion-input>
+        <div *ngIf="signupForm.get('email')?.invalid && signupForm.get('email')?.touched" class="error-text">required
+        </div>
+      </ion-item>
+
+      <ion-item>
+        <ion-input type="number" maxlength="10" formControlName="mobile" label="Mobile Number" labelPlacement="floating"
+          placeholder="Enter Mobile Number"></ion-input>
+        <div *ngIf="signupForm.get('mobile')?.invalid && signupForm.get('mobile')?.touched" class="error-text">required
+        </div>
+      </ion-item>
+
+      <ion-item>
+        <ion-select formControlName="gender" label="Gender"  labelPlacement="floating">
+          <ion-select-option value="male">Male</ion-select-option>
+          <ion-select-option value="female">Female</ion-select-option>
+          <ion-select-option value="other">Other</ion-select-option>
+        </ion-select>
+        <div *ngIf="signupForm.get('gender')?.invalid && signupForm.get('gender')?.touched" class="error-text">required
+        </div>
+      </ion-item>
+
+      <p>By signing up, you agree to the <a href="#">Terms of service</a> and <a href="#">Privacy policy</a>.</p>
+
+      <ion-button type="submit" [disabled]="signupForm.invalid" expand="block">Sign Up</ion-button>
+    </form>
+    </div>
+    <div class="or-divider_2">or</div>
+    <div class="inner_container">
+    <ion-button expand="block" color="light">Sign up with Gmail</ion-button>
+    <ion-button expand="block" color="light">Sign up with Facebook</ion-button>
+    <ion-button expand="block" color="light">Sign up with Apple</ion-button>
+    <p>Already have an account? <a (click)="navigateToSignin()">Sign In</a></p>
+  </div>
+  </div>
+</ion-content>

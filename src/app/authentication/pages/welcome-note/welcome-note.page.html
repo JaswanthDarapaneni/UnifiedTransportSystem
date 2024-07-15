@@ -1,0 +1,18 @@
+<ion-content [fullscreen]="true">
+  
+  <div class="main">
+    <div class="div-0">
+      <div class="skip" (click)="redirect()">Skip</div>
+  </div>
+  <div class="div-1">
+    <img loading="lazy" [src]="img" class="img-3" />
+    <div class="div-6">
+      <div class="title">{{title}}</div>
+      <div class="text">{{text}}</div>
+    </div>
+  </div>
+  <div class="div-2">
+    <img loading="lazy" (click)="updateContent()" [src]="loading" class="img-4" />
+  </div>
+</div>
+</ion-content>

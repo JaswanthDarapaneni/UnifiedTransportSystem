@@ -1,0 +1,251 @@
+:host {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  height: 100%;
+  justify-content: center;
+}
+
+.welcome-image {
+  width: 80%;
+  max-width: 400px;
+  height: auto;
+  margin-bottom: 30px;
+}
+
+.title {
+  font-size: 29px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 20px;
+  color: #888;
+  margin-bottom: 80px;
+}
+
+.div-3 {
+  display: contents;
+}
+
+.div-4 {
+  margin-top: 0px !important;
+
+  .create-account-btn,
+  .login-btn {
+    height: 40px;
+    width: 100%;
+  }
+
+  margin-top: 68px;
+  width: 100%;
+  display: grid;
+  justify-items: center;
+}
+
+.create-account-btn {
+  width: 80%;
+  max-width: 300px;
+  background-color: var(--ion-color-success);
+  color: white;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  border: 2px;
+  height: 30px;
+}
+
+.login-btn {
+  width: 80%;
+  max-width: 300px;
+  border-color: var(--ion-color-success);
+  color: var(--ion-color-success);
+  background-color: white;
+  border-radius: 10px;
+  border: 3px solid var(--ion-color-success);
+  height: 30px;
+}
+
+/* Foldable screen styles */
+@media screen and (min-width: 320px) and (max-width: 768px) and (orientation: portrait) {
+  ion-content {
+    div {
+      .welcome-image {
+        width: 100%;
+        max-width: 300px;
+        margin-top: 0px !important;
+      }
+
+      .title {
+        font-size: 25px;
+      }
+
+      .subtitle {
+        font-size: 18px;
+        margin-bottom: 20px;
+      }
+
+      .div-4 {
+        margin-top: 68px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) and (orientation: landscape) {
+  div {
+    .welcome-image {
+      width: 100%;
+      max-width: 250px;
+      margin-top: 0px;
+    }
+
+    .subtitle {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .div-4 {
+      margin-top: 8px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  ion-content {
+    .container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding: 20px;
+      height: 100%;
+      justify-content: center;
+    }
+
+    .div-3 {
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      margin-left: 30px;
+    }
+    div {
+      .welcome-image {
+        width: 100%;
+        max-width: 300px;
+        margin-top: 0px;
+      }
+
+      .title {
+        font-size: 25px;
+      }
+
+      .subtitle {
+        font-size: 20px;
+        margin-bottom: 10px;
+      }
+
+      .div-4 {
+        .create-account-btn,
+        .login-btn {
+          height: 30px;
+        }
+
+        margin-top: 68px;
+        width: 100%;
+        display: grid;
+        justify-items: center;
+      }
+    }
+  }
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  ion-content {
+    div {
+      .welcome-image {
+        width: 100%;
+        max-width: 600px;
+        margin-top: 0px;
+      }
+
+      .title {
+        font-size: 50px;
+      }
+
+      .subtitle {
+        font-size: 25px;
+        margin-bottom: 90px;
+      }
+
+      .div-4 {
+        .create-account-btn,
+        .login-btn {
+          height: 40px;
+        }
+
+        margin-top: 68px;
+        width: 100%;
+        display: grid;
+        justify-items: center;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  ion-content {
+    .container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding: 20px;
+      height: 100%;
+      justify-content: center;
+    }
+
+    .div-3 {
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      margin-left: 30px;
+    }
+
+    div {
+      .welcome-image {
+        width: 100%;
+        max-width: 600px;
+        margin-top: 0px;
+      }
+
+      .title {
+        font-size: 50px;
+      }
+
+      .subtitle {
+        font-size: 25px;
+        margin-bottom: 90px;
+      }
+
+      .div-4 {
+        .create-account-btn,
+        .login-btn {
+          height: 40px;
+        }
+
+        margin-top: 68px;
+        width: 100%;
+        display: grid;
+        justify-items: center;
+      }
+    }
+  }
+}

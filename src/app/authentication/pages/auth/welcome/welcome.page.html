@@ -1,0 +1,14 @@
+<ion-content [fullscreen]="true">
+  <div class="container">
+    <img [src]="_content[0].img" alt="Car Sharing" class="welcome-image" />
+    <div class="div-3">
+      <div class="title">{{_content[0].title}}</div>
+      <div class="subtitle">{{_content[0].text}}</div>
+    </div>
+    <div class="div-4">
+      <button ion-button color='success' class="create-account-btn" (click)="navigate_signup()">Create an
+        account</button>
+      <button ion-button class="login-btn" (click)="navigate_signin()">Log In</button>
+    </div>
+  </div>
+</ion-content>

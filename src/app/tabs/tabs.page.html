@@ -1,0 +1,51 @@
+<ion-header>
+  <ion-toolbar id="main-content">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <div>
+      <ion-title>{{viewName}}</ion-title>
+    </div>
+
+  </ion-toolbar>
+</ion-header>
+<ion-menu side="start" menuId="customMenu" contentId="main-content" class="custom-menu" [type]="'overlay'">
+  <ion-header>
+    <ion-menu-toggle>
+      <ion-button color="light" fill="outline">
+        <ion-icon color="dark" slot="start" name="back"></ion-icon>
+      </ion-button>
+    </ion-menu-toggle>
+  </ion-header>
+
+  <ion-content class="custom-content">
+    <div class="profile-container">
+      <img [src]="user.profile" alt="Profile Picture" class="profile-pic">
+      <h2>{{user.name}}</h2>
+      <p>{{user.number}}</p>
+    </div>
+    <ion-list>
+      @for (item of menu; track item){
+      <ion-item button>
+        <ion-icon slot="start" src="" [name]='item?.icon'></ion-icon>
+        <ion-label>{{item.name}}</ion-label>
+      </ion-item>
+      }
+
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
+<ion-content class="custom-content">
+  <ion-tabs>
+    <ion-tab-bar slot="bottom">
+      @for(item of tab; track item){
+      <ion-tab-button [tab]="item.tab" (click)="onClick(item.name || '')">
+        <ion-icon aria-hidden="true" [name]="item.icon"></ion-icon>
+        <ion-label>{{item.name}}</ion-label>
+      </ion-tab-button>
+      }
+    </ion-tab-bar>
+
+  </ion-tabs>
+</ion-content>

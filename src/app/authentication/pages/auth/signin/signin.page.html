@@ -1,0 +1,38 @@
+<ion-buttons slot="start">
+  <ion-back-button color="dark" defaultHref="/"></ion-back-button>
+</ion-buttons>
+
+<ion-content [fullscreen]="">
+  <div class="or-divider">Sign in </div>
+
+  <div class="container">
+    <div class="or-divider_inner">Sign in </div>
+    <div>
+      <form [formGroup]="signinForm" (ngSubmit)="onSubmit()">
+        <ion-item>
+          <ion-input type="number" formControlName="mobile" name="mobile" errorText="required"
+            placeholder="Mobile Number"></ion-input>
+        </ion-item>
+        <ion-item>
+
+          <ion-input type="password" formControlName="password" name="password"
+            placeholder="Password"><ion-input-password-toggle slot="end"></ion-input-password-toggle>
+          </ion-input>
+          <div *ngIf="signinForm.get('password')?.invalid && signinForm.get('password')?.touched" class="error-text">
+            required</div>
+        </ion-item>
+
+        <ion-button type="submit" [disabled]="signinForm.invalid" expand="block">Sign in</ion-button>
+      </form>
+      <p>By signing in, you agree to the <a href="#">Terms of service</a> and <a href="#">Privacy policy</a>.</p>
+    </div>
+    <div class="or-divider_2">or</div>
+    <div>
+      <ion-button expand="block" color="light">Sign in with Gmail</ion-button>
+      <ion-button expand="block" color="light">Sign in with Facebook</ion-button>
+      <ion-button expand="block" color="light">Sign in with Apple</ion-button>
+      <p>Don't have an account? <a (click)="navigateToSignup()">Sign Up</a></p>
+    </div>
+
+  </div>
+</ion-content>

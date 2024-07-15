@@ -1,0 +1,7 @@
+{
+  "name": "unified-transport",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}

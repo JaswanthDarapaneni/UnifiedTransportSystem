@@ -1,0 +1,22 @@
+<ion-buttons slot="start">
+  <ion-back-button color="dark" defaultHref="/signup"></ion-back-button>
+</ion-buttons>
+<ion-content [fullscreen]="true">
+  <div class="container">
+    <ion-text class="title">
+      <h2>Phone verification</h2>
+    </ion-text>
+    <ion-text class="subtitle">
+      <p>Enter your OTP code</p>
+    </ion-text>
+
+    <ng-otp-input #ngOtpInput class="ng-otp-input"  (onInputChange)="onOtpChange($event)" [config]="{length:5, allowNumbersOnly: true,
+      placeholder:''}"></ng-otp-input>
+    <ion-text class="resend-text">
+      <p>Didn’t receive code? <a (click)="resendCode()">Resend again</a></p>
+    </ion-text>
+
+    <ion-button type="submit" (click)="onSubmit()" expand="block"
+      [disabled]="otp.length === 5? false : true">Verify</ion-button>
+  </div>
+</ion-content>

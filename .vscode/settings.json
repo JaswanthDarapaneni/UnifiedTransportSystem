@@ -1,0 +1,12 @@
+{
+  "typescript.preferences.autoImportFileExcludePatterns": [
+    "@ionic/angular/common",
+    "@ionic/angular"
+  ],
+  "dataworkspace.excludedProjects": [
+    "rapido/rapido.sqlproj"
+  ],
+  "cSpell.words": [
+    "ionicons"
+  ]
+}

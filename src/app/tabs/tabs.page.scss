@@ -1,0 +1,79 @@
+ion-tabs {
+    background-color: white !important;
+
+    ion-tab-bar {
+        border: 1px solid black;
+        border-radius: 50px 50px 0px 0px;
+        --background: white !important;
+        height: 10vh;
+    }
+}
+
+ion-header {
+    // background-color: white !important;
+    box-shadow: none !important;
+    background: transparent;
+
+    ion-toolbar {
+        display: inline;
+        --background: white !important;
+
+        ion-title {
+            text-align: center;
+            width: 100%;
+            padding-inline-start: 0px !important;
+            padding-inline-end: 0px !important;
+
+        }
+    }
+}
+
+ion-menu::part(container) {
+    border-radius: 0 40px 40px 0;
+    --width: 250px;
+    box-shadow: 4px 0px 16px rgba(99, 224, 27, 0.284);
+}
+
+
+.profile-container {
+    text-align: center;
+    padding: 20px;
+}
+
+.profile-pic {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.profile-container h2 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.profile-container p {
+    margin: 0;
+    color: gray;
+}
+
+ion-item {
+    --inner-padding-start: 10px;
+    --inner-padding-end: 10px;
+    --min-height: 50px;
+}
+ion-content {
+
+    /* Hide scrollbar for Chrome, Safari, and Opera */
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  
+    /* Hide scrollbar for IE, Edge, and Firefox */
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    // For ios and android
+    overflow: -moz-scrollbars-none;
+    -ms-overflow-style: none;
+    -webkit-overflow-scrolling: touch;
+  }
