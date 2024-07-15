@@ -56,11 +56,12 @@ To run the Unified Transport System locally, follow these steps:
    npm start
 Open your browser and visit `http://localhost:4200` to view the application.
 
-   ```
 ## for ionic native app
+
+   ```
   Start the development server:
    ```
-   ionic start
+   ionic serve
    ```
  Open your browser and visit `http://localhost:8100` to view the application.
 
