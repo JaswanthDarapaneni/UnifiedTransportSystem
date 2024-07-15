@@ -1,4 +1,19 @@
 
+/**
+ * The Unified Transport System is designed to streamline and enhance the efficiency of transport services by integrating various modes of transportation into a single, cohesive platform.
+ *
+ * The key features of the Unified Transport System include:
+ * - **Integration:** Connects different transport service providers, such as buses, trains, and taxis.
+ * - **Accessibility:** Ensures transport networks are accessible to all users, including those with disabilities.
+ * - **Safety:** Prioritizes passenger and driver safety with advanced monitoring and communication systems.
+ * - **Sustainability:** Promotes sustainable transport solutions, like electric vehicles and efficient route planning.
+ * - **Efficiency:** Optimizes routes and schedules using GPS tracking and data analytics.
+ * - **User Experience:** Provides real-time updates, easy payment options, and a unified platform for booking and managing transport services.
+ *
+ * To run the Unified Transport System locally, users can follow the installation instructions provided in the README.md file, which include cloning the repository, installing dependencies, and starting the development server.
+ *
+ * Contributions to the project are welcome, and users can follow the contributing guidelines to submit pull requests with their changes.
+ */
 # Unified Transport System
 
 The Unified Transport System is designed to streamline and enhance the efficiency of transport services by integrating various modes of transportation into a single, cohesive platform.
