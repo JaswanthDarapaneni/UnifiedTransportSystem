@@ -1,8 +1,8 @@
 {
-  "name": "ionic-app-base",
+  "name": "UnifiedTransportSystem",
   "version": "0.0.0",
-  "author": "Ionic Framework",
-  "homepage": "https://ionicframework.com/",
+  "author": "Jaswanth Darapaneni",
+  "homepage": "https://port-folio-delta-gules.vercel.app/",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
